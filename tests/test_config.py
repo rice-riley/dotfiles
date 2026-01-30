@@ -3,7 +3,6 @@
 from pathlib import Path
 
 import pytest
-
 from dotfiles.config import expand_path, load_config
 
 

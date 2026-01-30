@@ -27,10 +27,10 @@ test-v:
 	pytest -v
 
 lint:
-	ruff check src tests
+	ruff check dotfiles tests
 
 format:
-	ruff format src tests
+	ruff format dotfiles tests
 
 typecheck:
 	mypy
@@ -38,5 +38,5 @@ typecheck:
 check: lint typecheck test
 
 clean:
-	rm -rf build/ dist/ *.egg-info src/*.egg-info .pytest_cache .mypy_cache .ruff_cache
+	rm -rf build/ dist/ *.egg-info .pytest_cache .mypy_cache .ruff_cache
 	find . -type d -name __pycache__ -exec rm -rf {} +

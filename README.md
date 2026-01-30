@@ -1,8 +1,26 @@
 # dotfiles
 
-Personal dotfiles for Neovim, Tmux, Zsh, Ghostty, Kitty, i3, and Polybar.
+[![PyPI version](https://badge.fury.io/py/dotfiles-installer.svg)](https://pypi.org/project/dotfiles-installer/)
+[![CI](https://github.com/riceriley59/dotfiles/actions/workflows/ci.yml/badge.svg)](https://github.com/riceriley59/dotfiles/actions/workflows/ci.yml)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+A CLI tool to install dotfiles configurations from YAML. Includes personal configs for Neovim, Tmux, Zsh, Ghostty, Kitty, i3, and Polybar.
 
 ## Installation
+
+### From PyPI
+
+```bash
+pip install dotfiles-installer
+
+# macOS
+dotfiles configs/mac.yaml
+
+# Linux
+dotfiles configs/linux.yaml
+```
+
+### From Source
 
 ```bash
 git clone https://github.com/riceriley59/dotfiles.git
@@ -20,12 +38,13 @@ dotfiles configs/linux.yaml
 
 ```
 ├── configs/          # YAML configs (mac.yaml, linux.yaml)
+├── dotfiles/         # Installer CLI package
 ├── files/            # Dotfiles to install
 │   ├── config/       # ~/.config/* (nvim, ghostty, kitty, i3, polybar)
 │   ├── zsh/          # ~/.zshrc, ~/.zsh_profile
 │   ├── tmux/         # ~/.tmux.conf
 │   └── bin/          # ~/.local/scripts
-└── src/dotfiles/     # Installer CLI
+└── tests/            # Test suite
 ```
 
 ## What Gets Installed
