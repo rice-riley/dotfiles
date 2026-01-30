@@ -2,6 +2,7 @@
 .venv
 .pytest_cache
 __pycache__
+dotfiles/_version.py
 
 # Ignore mypy and ruff caches
 .mypy_cache
