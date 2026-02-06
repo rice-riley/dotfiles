@@ -105,6 +105,9 @@ alias vim=nvim
 
 export TERM=xterm-256color
 
+# enable vi mode
+bindkey -v
+
 # Check if there are no tmux sessions and create a start
 # session if there isn't any
 if ! tmux list-sessions 2>/dev/null | grep -q .; then

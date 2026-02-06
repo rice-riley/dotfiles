@@ -6,8 +6,8 @@ addToPathFront() {
     export PATH="$1:$PATH"
 }
 
-export CC="clang-12"
-export CXX="clang++-12"
+export CC="clang"
+export CXX="clang++"
 export GOPATH=$HOME/go
 export GIT_EDITOR=$VIM
 
